@@ -170,12 +170,10 @@
 
     <div class="login-card">
 
-        <!-- LOGO -->
         <div class="logo-box">
             <i class="bi bi-calendar-event"></i>
         </div>
 
-        <!-- TITLE -->
         <h1 class="login-title">
             EventLister
         </h1>
@@ -184,7 +182,6 @@
             Sign in to continue to your dashboard
         </p>
 
-        <!-- ERRORS -->
         @if ($errors->any())
 
             <div class="alert-error">
@@ -197,12 +194,10 @@
 
         @endif
 
-        <!-- FORM -->
         <form action="/login" method="POST">
 
             @csrf
 
-            <!-- EMAIL -->
             <div class="input-group">
 
                 <i class="bi bi-envelope"></i>
@@ -216,7 +211,6 @@
 
             </div>
 
-            <!-- PASSWORD -->
             <div class="input-group">
 
                 <i class="bi bi-lock"></i>
@@ -238,7 +232,6 @@
 
             </div>
 
-            <!-- OPTIONS -->
             <div class="login-row">
 
                 <label class="remember-box">
@@ -255,12 +248,10 @@
 
             </div>
 
-            <!-- BUTTON -->
             <button type="submit" class="login-btn">
                 Sign In
             </button>
 
-            <!-- REGISTER -->
             <p class="register-text">
 
                 Don't have an account?

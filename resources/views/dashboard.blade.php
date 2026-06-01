@@ -18,7 +18,6 @@ $user = \App\Models\User::find($userId);
 
 <div style="min-height: 100vh; background: #f4fdf7; font-family: 'Segoe UI', sans-serif;">
 
-    <!-- NAVBAR -->
     <nav style="
         background: #0f6b3d;
         height: 76px;
@@ -30,10 +29,8 @@ $user = \App\Models\User::find($userId);
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     ">
 
-        <!-- LEFT -->
         <div style="display: flex; align-items: center; gap: 40px;">
 
-            <!-- LOGO -->
             <div style="display: flex; align-items: center; gap: 14px;">
 
                 <div style="
@@ -60,10 +57,8 @@ $user = \App\Models\User::find($userId);
 
             </div>
 
-            <!-- MENU -->
             <div style="display: flex; align-items: center; gap: 10px;">
 
-    <!-- OVERVIEW -->
     <a href="{{ route('dashboard') }}"
        style="
         text-decoration: none;
@@ -80,7 +75,6 @@ $user = \App\Models\User::find($userId);
         Overview
     </a>
 
-    <!-- EVENTS -->
     <a href="{{ route('products') }}"
        style="
         text-decoration: none;
@@ -97,7 +91,6 @@ $user = \App\Models\User::find($userId);
         Events
     </a>
 
-                <!-- USERS -->
                 <a href="{{ route('users') }}"
                    style="
                     text-decoration: none;
@@ -113,7 +106,6 @@ $user = \App\Models\User::find($userId);
                     Users
                 </a>
 
-                <!-- FAQ -->
                 <a href="#"
                    style="
                     text-decoration: none;
@@ -129,7 +121,6 @@ $user = \App\Models\User::find($userId);
                     FAQ
                 </a>
 
-                <!-- SETTINGS -->
                 <a href="{{ route('profile') }}"
                    style="
                     text-decoration: none;
@@ -149,10 +140,8 @@ $user = \App\Models\User::find($userId);
 
         </div>
 
-      <!-- RIGHT -->
 <div style="display: flex; align-items: center; gap: 18px;">
 
-    <!-- NOTIFICATION -->
     <div style="
         width: 50px;
         height: 50px;
@@ -182,7 +171,6 @@ $user = \App\Models\User::find($userId);
     Logout
 </a>
 
-    <!-- PROFILE -->
     @if($user && $user->profile_picture)
 
         <img src="{{ asset('uploads/' . $user->profile_picture) }}"
@@ -218,10 +206,8 @@ $user = \App\Models\User::find($userId);
 
     </nav>
 
-    <!-- MAIN -->
     <div style="padding: 35px;">
 
-        <!-- HEADER -->
         <div style="margin-bottom: 30px;">
 
             <h1 style="
@@ -243,7 +229,6 @@ $user = \App\Models\User::find($userId);
 
         </div>
 
-        <!-- STATS -->
         <div style="
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -251,7 +236,6 @@ $user = \App\Models\User::find($userId);
             margin-bottom: 30px;
         ">
 
-            <!-- USERS -->
             <div style="
                 background: white;
                 border-radius: 20px;
@@ -296,7 +280,6 @@ $user = \App\Models\User::find($userId);
 
             </div>
 
-            <!-- PRODUCTS -->
             <div style="
                 background: white;
                 border-radius: 20px;
@@ -341,7 +324,6 @@ $user = \App\Models\User::find($userId);
 
             </div>
 
-            <!-- MY PRODUCTS -->
             <div style="
                 background: white;
                 border-radius: 20px;
@@ -386,7 +368,6 @@ $user = \App\Models\User::find($userId);
 
             </div>
 
-            <!-- OTHER PRODUCTS -->
             <div style="
                 background: white;
                 border-radius: 20px;
@@ -433,14 +414,12 @@ $user = \App\Models\User::find($userId);
 
         </div>
 
-        <!-- CONTENT -->
         <div style="
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 25px;
         ">
 
-            <!-- LEFT -->
             <div style="
                 background: white;
                 border-radius: 22px;
@@ -454,7 +433,6 @@ $user = \App\Models\User::find($userId);
 
                 <div style="margin-top:25px;">
 
-                    <!-- USERS -->
                     <div style="margin-bottom: 25px;">
 
                         <div style="
@@ -481,7 +459,6 @@ $user = \App\Models\User::find($userId);
 
                     </div>
 
-                    <!-- PRODUCTS -->
                     <div>
 
                         <div style="
@@ -512,7 +489,6 @@ $user = \App\Models\User::find($userId);
 
             </div>
 
-            <!-- RIGHT -->
             <div style="
                 background: white;
                 border-radius: 22px;

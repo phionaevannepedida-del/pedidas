@@ -150,12 +150,10 @@
 
     <div class="register-card">
 
-        <!-- LOGO -->
         <div class="logo-box">
             <i class="bi bi-person-plus-fill"></i>
         </div>
 
-        <!-- TITLE -->
         <h1 class="register-title">
             Create Account
         </h1>
@@ -164,7 +162,6 @@
             Register your account to continue to EventLister
         </p>
 
-        <!-- ERRORS -->
         @if ($errors->any())
 
             <div class="alert-error">
@@ -177,12 +174,10 @@
 
         @endif
 
-        <!-- FORM -->
         <form action="/register" method="POST">
 
             @csrf
 
-            <!-- FULL NAME -->
             <div class="input-group">
 
                 <i class="bi bi-person"></i>
@@ -196,7 +191,6 @@
 
             </div>
 
-            <!-- EMAIL -->
             <div class="input-group">
 
                 <i class="bi bi-envelope"></i>
@@ -210,7 +204,6 @@
 
             </div>
 
-            <!-- PASSWORD -->
             <div class="input-group">
 
                 <i class="bi bi-lock"></i>
@@ -232,7 +225,6 @@
 
             </div>
 
-            <!-- CONFIRM PASSWORD -->
             <div class="input-group">
 
                 <i class="bi bi-lock-fill"></i>

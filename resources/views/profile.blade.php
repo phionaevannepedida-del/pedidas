@@ -52,10 +52,8 @@
 
         </div>
 
-        <!-- MENU -->
         <div style="display:flex; align-items:center; gap:10px;">
 
-            <!-- OVERVIEW -->
             <a href="{{ route('dashboard') }}"
                style="
                 text-decoration:none;
@@ -89,7 +87,6 @@
     Events
 </a>
 
-            <!-- USERS -->
             <a href="{{ route('users') }}"
                style="
                 text-decoration:none;
@@ -106,7 +103,6 @@
                 Users
             </a>
 
-            <!-- FAQ -->
             <a href="#"
                style="
                 text-decoration:none;
@@ -143,10 +139,8 @@
 
     </div>
 
-    <!-- RIGHT -->
     <div style="display:flex; align-items:center; gap:18px;">
 
-        <!-- NOTIFICATION -->
         <div style="
             width:50px;
             height:50px;
@@ -161,7 +155,6 @@
             <i class="bi bi-bell" style="font-size:18px;"></i>
         </div>
 
-        <!-- PROFILE -->
         @if($user && $user->profile_picture)
 
             <img src="{{ asset('uploads/' . $user->profile_picture) }}"
@@ -196,7 +189,6 @@
     </div>
 
 </div>
-    <!-- CONTENT -->
     <div style="
         padding:40px;
         display:flex;
@@ -267,7 +259,6 @@
 
             </div>
 
-            <!-- UPDATE INFO -->
             <form action="/profile/update" method="POST">
 
                 @csrf
@@ -338,7 +329,6 @@
 
             <hr style="margin:35px 0;">
 
-            <!-- PROFILE PICTURE -->
             <form action="/profile/picture"
                   method="POST"
                   enctype="multipart/form-data">

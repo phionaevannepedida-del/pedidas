@@ -10,7 +10,6 @@
     font-family:'Segoe UI',sans-serif;
 ">
 
-    <!-- NAVBAR -->
     <div style="
         height:72px;
         background:#0f6b43;
@@ -21,10 +20,8 @@
         box-shadow:0 2px 10px rgba(0,0,0,0.08);
     ">
 
-        <!-- LEFT -->
         <div style="display:flex; align-items:center; gap:35px;">
 
-            <!-- LOGO -->
             <div style="display:flex; align-items:center; gap:12px;">
 
                 <div style="
@@ -51,7 +48,6 @@
 
             </div>
 
-            <!-- MENU -->
             <div style="display:flex; gap:12px;">
 
                 <a href="{{ route('dashboard') }}" style="
@@ -82,7 +78,6 @@
                     Events
                 </a>
 
-                <!-- ACTIVE -->
                 <a href="{{ route('users') }}" style="
                     text-decoration:none;
                     color:white;
@@ -130,7 +125,6 @@
 
         </div>
 
-        <!-- RIGHT -->
         <div style="display:flex; align-items:center; gap:16px;">
 
             <div style="
@@ -181,10 +175,8 @@
 
     </div>
 
-    <!-- MAIN -->
     <div style="padding:35px;">
 
-        <!-- HEADER -->
         <div style="
             display:flex;
             justify-content:space-between;
@@ -213,7 +205,6 @@
 
             </div>
 
-            <!-- ADD BUTTON -->
             <button
                 data-bs-toggle="modal"
                 data-bs-target="#addUserModal"
@@ -236,7 +227,6 @@
 
         </div>
 
-        <!-- TABLE -->
         <div style="
             background:white;
             border-radius:22px;
@@ -334,7 +324,6 @@
 
                     </tr>
 
-                    <!-- EDIT USER MODAL -->
                     <div class="modal fade" id="editUserModal{{ $user->id }}" tabindex="-1">
 
                         <div class="modal-dialog">
@@ -364,7 +353,6 @@
 
                                 </div>
 
-                                <!-- FUNCTION NOT CHANGED -->
                                 <form action="{{ route('users.update', $user->id) }}" method="POST">
 
                                     @csrf
@@ -377,7 +365,6 @@
                                                 Full Name
                                             </label>
 
-                                            <!-- KEEP fullname -->
                                             <input type="text"
                                                    name="fullname"
                                                    class="form-control"
@@ -444,7 +431,6 @@
 
 </div>
 
-<!-- ADD USER MODAL -->
 <div class="modal fade" id="addUserModal" tabindex="-1">
 
     <div class="modal-dialog">
@@ -474,7 +460,6 @@
 
             </div>
 
-            <!-- FUNCTION NOT CHANGED -->
             <form action="/users" method="POST">
 
                 @csrf
@@ -487,7 +472,6 @@
                             Full Name
                         </label>
 
-                        <!-- KEEP fullname -->
                         <input type="text"
                                name="fullname"
                                class="form-control"

@@ -22,10 +22,8 @@
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
 ">
 
-    <!-- LEFT -->
     <div style="display:flex; align-items:center; gap:40px;">
 
-        <!-- LOGO -->
         <div style="display:flex; align-items:center; gap:14px;">
 
             <div style="
@@ -53,10 +51,8 @@
 
         </div>
 
-        <!-- MENU -->
         <div style="display:flex; align-items:center; gap:10px;">
 
-            <!-- OVERVIEW -->
             <a href="{{ route('dashboard') }}"
                style="
                 text-decoration:none;
@@ -73,7 +69,6 @@
                 Overview
             </a>
 
-            <!-- EVENTS ACTIVE -->
             <a href="{{ route('products') }}"
                style="
                 text-decoration:none;
@@ -90,7 +85,6 @@
                 Events
             </a>
 
-            <!-- USERS -->
             <a href="{{ route('users') }}"
                style="
                 text-decoration:none;
@@ -107,7 +101,6 @@
                 Users
             </a>
 
-            <!-- FAQ -->
             <a href="#"
                style="
                 text-decoration:none;
@@ -124,7 +117,6 @@
                 FAQ
             </a>
 
-            <!-- SETTINGS -->
             <a href="{{ route('profile') }}"
                style="
                 text-decoration:none;
@@ -145,10 +137,8 @@
 
     </div>
 
-    <!-- RIGHT -->
     <div style="display:flex; align-items:center; gap:18px;">
 
-        <!-- NOTIFICATION -->
         <div style="
             width:50px;
             height:50px;
@@ -163,7 +153,6 @@
             <i class="bi bi-bell" style="font-size:18px;"></i>
         </div>
 
-        <!-- PROFILE -->
         @if($user && $user->profile_picture)
 
             <img src="{{ asset('uploads/' . $user->profile_picture) }}"
@@ -199,10 +188,8 @@
 
     </div>
 
-    <!-- MAIN -->
     <div style="padding:35px;">
 
-        <!-- TITLE -->
         <div style="margin-bottom:28px;">
 
             <h1 style="
@@ -224,7 +211,6 @@
 
         </div>
 
-        <!-- STATS -->
         <div style="
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -232,7 +218,6 @@
             margin-bottom:30px;
         ">
 
-            <!-- CARD -->
             <div style="
                 background:white;
                 border-radius:18px;
@@ -375,7 +360,6 @@
 
         </div>
 
-        <!-- SEARCH + BUTTON -->
         <div style="
             display:flex;
             justify-content:space-between;
@@ -384,7 +368,6 @@
             gap:20px;
         ">
 
-            <!-- BUTTON -->
             <button
                 data-bs-toggle="modal"
                 data-bs-target="#addEventModal"
@@ -405,7 +388,6 @@
                 Create Event
             </button>
 
-            <!-- SEARCH -->
             <div style="
                 width:330px;
                 position:relative;
@@ -438,7 +420,6 @@
 
         </div>
 
-        <!-- EVENT LIST -->
         <div style="
             display:flex;
             flex-direction:column;
@@ -466,7 +447,6 @@
 
             @endphp
 
-            <!-- CARD -->
             <div style="
                 background:white;
                 border-radius:22px;
@@ -478,14 +458,12 @@
                 box-shadow:0 2px 10px rgba(0,0,0,0.04);
             ">
 
-                <!-- LEFT -->
                 <div style="
                     display:flex;
                     align-items:center;
                     gap:22px;
                 ">
 
-                    <!-- DATE -->
                     <div style="
                         width:95px;
                         min-width:95px;
@@ -527,7 +505,6 @@
 
                     </div>
 
-                    <!-- ICON -->
                     <div style="
                         width:72px;
                         height:72px;
@@ -542,7 +519,6 @@
                         <i class="bi bi-laptop"></i>
                     </div>
 
-                    <!-- DETAILS -->
                     <div>
 
                         <h3 style="
@@ -580,7 +556,6 @@
 
                 </div>
 
-                <!-- RIGHT -->
                 <div style="
                     display:flex;
                     flex-direction:column;
@@ -588,7 +563,6 @@
                     gap:18px;
                 ">
 
-                    <!-- STATUS -->
                     <div style="
                         padding:8px 16px;
                         border-radius:999px;
@@ -599,7 +573,6 @@
                         {{ $status }}
                     </div>
 
-                    <!-- ACTIONS -->
                     <div style="display:flex; gap:10px;">
 
                         <button
@@ -643,7 +616,6 @@
 
             </div>
 
-            <!-- EDIT MODAL -->
             <div class="modal fade" id="editEvent{{ $product->id }}" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content" style="border-radius:20px; border:none; overflow:hidden;">
@@ -770,7 +742,6 @@
 
 </div>
 
-<!-- ADD EVENT MODAL -->
 <div class="modal fade" id="addEventModal" tabindex="-1">
 
     <div class="modal-dialog">
